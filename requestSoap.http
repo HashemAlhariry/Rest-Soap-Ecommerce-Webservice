@@ -1,0 +1,232 @@
+
+POST http://localhost:9090/rest_soap_project/products HTTP/1.1
+Content-Type: text/xml
+
+<?xml version="1.0"?>
+<soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:jets="http://soap.network.backend/">
+
+    <soap:Body>
+        <jets:getAllProducts>
+
+        </jets:getAllProducts>
+    </soap:Body>
+
+</soap:Envelope>
+
+###
+
+
+
+POST http://localhost:9090/rest_soap_project/products HTTP/1.1
+Content-Type: text/xml
+
+<?xml version="1.0"?>
+<soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:jets="http://soap.network.backend/">
+
+    <soap:Body>
+        <jets:addProduct>
+
+            <arg0>
+                <description>New iPhone 12</description>
+                <price>15000.0</price>
+                <name>iPhone 12</name>
+                <quantity>40</quantity>
+                <totalPurchasesNumber>100</totalPurchasesNumber>
+            </arg0>
+
+        </jets:addProduct>
+    </soap:Body>
+
+</soap:Envelope>
+
+###
+
+
+POST http://localhost:9090/rest_soap_project/products HTTP/1.1
+Content-Type: text/xml
+
+<?xml version="1.0"?>
+<soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:jets="http://soap.network.backend/">
+
+    <soap:Body>
+        <jets:updateProduct>
+
+            <arg0>
+                <id>1</id>
+                <description>New iPhone 12 updated</description>
+                <price>25000.0</price>
+                <name>iPhone 12</name>
+                <quantity>40</quantity>
+                <totalPurchasesNumber>100</totalPurchasesNumber>
+            </arg0>
+
+        </jets:updateProduct>
+    </soap:Body>
+
+</soap:Envelope>
+
+###
+
+POST http://localhost:9090/rest_soap_project/products HTTP/1.1
+Content-Type: text/xml
+
+<?xml version="1.0"?>
+<soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:jets="http://soap.network.backend/">
+
+    <soap:Body>
+        <jets:getProduct>
+
+            <arg0>2</arg0>
+
+        </jets:getProduct>
+    </soap:Body>
+
+</soap:Envelope>
+
+###
+
+POST http://localhost:9090/rest_soap_project/products HTTP/1.1
+Content-Type: text/xml
+
+<?xml version="1.0"?>
+<soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:jets="http://soap.network.backend/">
+
+    <soap:Body>
+        <jets:deleteProduct>
+            <arg0>3</arg0>
+        </jets:deleteProduct>
+    </soap:Body>
+
+</soap:Envelope>
+
+###
+
+POST http://localhost:9090/rest_soap_project/users HTTP/1.1
+Content-Type: text/xml
+
+<?xml version="1.0"?>
+<soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:jets="http://soap.network.backend/">
+
+    <soap:Body>
+        <jets:getAllUsers>
+
+        </jets:getAllUsers>
+    </soap:Body>
+
+</soap:Envelope>
+###
+
+POST http://localhost:9090/rest_soap_project/users HTTP/1.1
+Content-Type: text/xml
+
+<?xml version="1.0"?>
+<soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:jets="http://soap.network.backend/">
+
+    <soap:Body>
+        <jets:saveUser>
+
+            <arg0>
+                <userName>Hany</userName>
+                <email>hany112225@gmail.com</email>
+                <pass>123445</pass>
+                <address>smart village,giza</address>
+                <creditLimit>50000</creditLimit>
+            </arg0>
+        </jets:saveUser>
+    </soap:Body>
+
+</soap:Envelope>
+
+###
+
+POST http://localhost:9090/rest_soap_project/users HTTP/1.1
+Content-Type: text/xml
+
+<?xml version="1.0"?>
+<soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:jets="http://soap.network.backend/">
+
+    <soap:Body>
+        <jets:updateUser>
+
+            <arg0>
+                <id>83</id>
+                <userName>Hany</userName>
+                <email>hany112225@gmailgmail.com</email>
+                <pass>123445</pass>
+                <address>smart village,giza</address>
+                <creditLimit>50000</creditLimit>
+            </arg0>
+        </jets:updateUser>
+    </soap:Body>
+
+</soap:Envelope>
+
+###
+
+POST http://localhost:9090/rest_soap_project/users HTTP/1.1
+Content-Type: text/xml
+
+<?xml version="1.0"?>
+<soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:jets="http://soap.network.backend/">
+
+    <soap:Body>
+        <jets:getUser>
+            <arg0>83</arg0>
+        </jets:getUser>
+    </soap:Body>
+
+</soap:Envelope>
+
+###
+POST http://localhost:9090/rest_soap_project/users HTTP/1.1
+Content-Type: text/xml
+
+<?xml version="1.0"?>
+<soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:jets="http://soap.network.backend/">
+
+    <soap:Body>
+        <jets:deleteUser>
+            <arg0>84</arg0>
+        </jets:deleteUser>
+    </soap:Body>
+
+</soap:Envelope>
+
+###
+POST http://localhost:9090/rest_soap_project/orders HTTP/1.1
+Content-Type: text/xml
+
+<?xml version="1.0"?>
+<soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:jets="http://soap.network.backend/">
+
+    <soap:Body>
+        <jets:getAllOrders>
+
+        </jets:getAllOrders>
+    </soap:Body>
+
+</soap:Envelope>
+###
+

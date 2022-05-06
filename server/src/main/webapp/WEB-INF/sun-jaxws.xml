@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
+
+    <endpoint
+            name="SoapWebService"
+            implementation= "backend.network.soap.UserSoapResource"
+            url-pattern = "/users" />
+
+    <endpoint
+            name="SoapWebService"
+            implementation= "backend.network.soap.ProductSoapResource"
+            url-pattern = "/products" />
+
+    <endpoint
+            name="SoapWebService"
+            implementation= "backend.network.soap.OrderSoapResource"
+            url-pattern = "/orders" />
+
+
+</endpoints>
