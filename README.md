@@ -9,7 +9,7 @@ Ecommerce service built with JAX-RS and JAX-WS.
 https://documenter.getpostman.com/view/20646686/UyxdL99m
 
 # Run With Maven
--  Deploy the application: mvn clean compile tomcat7:redeploy
+-  Deploy the application: ```mvn clean compile tomcat7:redeploy```
 -  configure tomcat in pom.xml.
 
 
